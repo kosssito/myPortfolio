@@ -5,14 +5,14 @@ import { useNavigate } from "react-router-dom";
 
 function MyNavBar() {
   const navigate = useNavigate();
-  const handleCLick = (eventKey) => {
-    if (eventKey.target.innerText === "Eduardo's PortFolio")
+  const handleCLick = (e) => {
+    if (e.target.innerText === "Eduardo's PortFolio")
       return navigate("/");
-    navigate("/" + eventKey.target.innerText.toLowerCase());
+    navigate("/" + e.target.innerText.toLowerCase());
   };
   return (
     <>
-      <Navbar className="py-4" bg="dark" variant="dark">
+      <Navbar className="py-4" bg="dark" variant="dark" >
         <Container>
           <Navbar.Brand onClick={handleCLick}>Eduardo's PortFolio</Navbar.Brand>
           <Nav className="me-auto" onClick={handleCLick}>
