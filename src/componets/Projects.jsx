@@ -10,12 +10,12 @@ import food3 from "../img/Food3.jpg";
 const Projects = () => {
   return (
     <>
-      <div className="bg-secondary">
+       <div className="bg-light">
         <NavBar />
 
         <div className="row">
-          <Card className="col-lg p-5 m-5 bg-dark text-muted">
-            <h2 className="text-center text-white">Henrry Restaurant</h2>
+        <Card className="col-lg m-5 bg-muted text-muted">
+            <h2 className="text-center text-secondary">Henrry Restaurant</h2>
             <Carousel className="p-4">
               <Carousel.Item>
                 <img className="d-block w-100" src={food1} alt="food1" />
@@ -27,7 +27,7 @@ const Projects = () => {
                 <img className="d-block w-100" src={food3} alt="food3" />
               </Carousel.Item>
             </Carousel>
-            <p className="m-4">
+            <p className="">
               Henry's Foods is the final project that we developed in the
               Henry's bootcamp. It is a web application that seeks to integrate
               the purchase flow of a client and the dashboard of the owner of
@@ -54,13 +54,13 @@ const Projects = () => {
               <div className="p-2">
 
               <Nav.Link
-              className="text-white"
+              className="text-primary"
               href="https://github.com/kosssito/HenryClient"
             >
               Github Client Repository 
             </Nav.Link>
             <Nav.Link
-              className="text-white"
+             className="text-primary"
               href="https://github.com/kosssito/Henry_Restaurant_Back"
             >
               Github Bakend Repository 
@@ -68,14 +68,14 @@ const Projects = () => {
               </div>
             </p>
             <Nav.Link
-              className="text-white text-center"
+              className="text-primary text-center"
               href="https://main-henry-client.vercel.app/"
             >
               Go to page project
             </Nav.Link>
           </Card>
-          <Card className="col-lg p-5 m-5 bg-dark text-muted">
-            <h2 className="text-center text-white">Countries</h2>
+          <Card className="col-lg m-5 bg-muted text-muted">
+            <h2 className="text-center text-secondary">Countries</h2>
             <Carousel className="p-4">
               <Carousel.Item>
                 <img className="d-block w-100" src={countries1} alt="food1" />
@@ -101,7 +101,7 @@ const Projects = () => {
               developer who manages the project.
               <div className="p-2">
               <Nav.Link
-              className="text-white"
+              className="text-primary"
               href="https://github.com/kosssito/Countries-"
             >
               Github Repository
@@ -109,7 +109,7 @@ const Projects = () => {
               </div>
             </p>
             <Nav.Link
-              className="text-white text-center"
+              className="text-primary text-center"
               href="https://pi-cliente-countries-oqa6lrgzq-kosssito.vercel.app/"
             >
               Go to page project
