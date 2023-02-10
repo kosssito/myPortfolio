@@ -1,0 +1,112 @@
+.container{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+
+}
+
+.container nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.container nav a{
+    text-decoration: none;
+    color:#ffffff;
+
+}
+
+.text{
+    width: 50%;
+    color: #fff;
+}
+
+.text h1{
+   font-size: 80px;
+   animation: moveRight 1s ease-in;
+}
+.text h2{
+  font-size: 30px;
+  animation: moveLeft 1s ease-in;
+}
+
+.animacion{
+   padding: 10px 0px;
+    animation: down 1s ease-in;
+}
+
+.header{
+    background: #DA4453;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
+.img{
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    animation: up 1s ease-in;
+}
+
+@keyframes up{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes down{
+    0%{
+        opacity: 0;
+        transform: translatex(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.wave{
+    height: 100px;
+    width: 100%;
+    background: #DA4453;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
