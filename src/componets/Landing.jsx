@@ -1,22 +1,26 @@
-
 import vector from "../img/vector.png";
 import style from "./Landing.module.css";
 import { Link } from "react-router-dom";
 
 const Landing = () => {
+
+
+const handleClick = (e)=>{
+  console.log(e.target)
+}
   return (
     <>
       <header className={style.header}>
         <div className={style.container}>
           <nav>
-          <Link to="">Menu</Link>
-            {/* <div className="links one" id="links">
+            <Link onClick={handleClick} className="icon" to="">Menu</Link>
+            <div className="links one" id="links">
               <Link to="./home">Home</Link>
               <Link to="./about">About</Link>
               <Link to="./skills">Skills</Link>
               <Link to="./projects">Projects</Link>
               <Link to="./Contact">Contact</Link>
-            </div> */}
+            </div>
           </nav>
           <div className={style.text}>
             <h1>Eduardo</h1>
@@ -30,8 +34,8 @@ const Landing = () => {
           <img className={style.img} src={vector} alt="img vector" />
         </div>
       </header>
-
-      <div className={style.wave}>
+      <div className={style.space}></div>
+      {/* <div className={style.wave}>
         <div style={{ height: "150px", overflow: "hidden" }}>
           <svg
             viewBox="0 0 500 150"
@@ -44,7 +48,7 @@ const Landing = () => {
             ></path>
           </svg>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
